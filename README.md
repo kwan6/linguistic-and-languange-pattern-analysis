@@ -1,0 +1,1 @@
+# linguistic-and-languange-pattern-analysis
