@@ -1,6 +1,6 @@
 # Linguistic and Language Patterns Analysis w/ 3 Different Algorithms
 
-# Output
+# Output Example
 
   - Accuracy: 0.82 (IndoBERT)
   - F1-score: 0.74
