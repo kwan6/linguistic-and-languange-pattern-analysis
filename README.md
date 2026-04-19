@@ -1,4 +1,4 @@
-# Linguistic and Language Patterns Analysis w/ 3 Different Algorithms
+# A Comparison of Shallow Learning and Deep Learning Algorithms for Classifying Clickbait and Non-Clickbait Online News
 
 # Output Example
 
