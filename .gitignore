@@ -1,0 +1,37 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.env
+venv/
+.venv/
+
+# Models (terlalu besar untuk GitHub)
+models/
+*.pt
+*.pth
+*.bin
+*.h5
+*.ckpt
+
+# Data (jangan push dataset mentah)
+data/raw/
+data/annotated/csv/*.csv
+
+# Jupyter
+.ipynb_checkpoints/
+*.ipynb
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+
+results/
+models/
+venv/
+clickbait-nlp/
+data/raw/
