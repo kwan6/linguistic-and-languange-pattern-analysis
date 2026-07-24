@@ -8,7 +8,7 @@ Project ini membandingkan performa model tradisional (shallow learning) seperti 
 
 Perkembangan media online menyebabkan penggunaan judul clickbait semakin meningkat. Judul clickbait dirancang untuk menarik perhatian pembaca, namun sering kali tidak sepenuhnya merepresentasikan isi berita.
 
-Dengan memanfaatkan teknik Natural Language Processing (NLP), penelitian ini mencoba mengidentifikasi pola linguistik pada judul berita serta membandingkan performa beberapa algoritma klasifikasi dalam mendeteksi clickbait. Pendekatan NLP memungkinkan komputer memahami dan memproses bahasa manusia secara otomatis. :contentReference[oaicite:1]{index=1}
+Dengan memanfaatkan teknik Natural Language Processing (NLP), penelitian ini mencoba mengidentifikasi pola linguistik pada judul berita serta membandingkan performa beberapa algoritma klasifikasi dalam mendeteksi clickbait. Pendekatan NLP memungkinkan komputer memahami dan memproses bahasa manusia secara otomatis.
 
 ## Tujuan Penelitian
 
@@ -40,7 +40,7 @@ Tahapan preprocessing yang digunakan meliputi:
 - Support Vector Machine (Linear SVM)
 - IndoBERT
 
-Naive Bayes dan SVM merupakan algoritma klasifikasi yang banyak digunakan pada text classification karena sederhana dan efektif. Sementara itu, BERT merupakan model Transformer yang saat ini banyak digunakan pada berbagai tugas NLP. :contentReference[oaicite:2]{index=2}
+Naive Bayes dan SVM merupakan algoritma klasifikasi yang banyak digunakan pada text classification karena sederhana dan efektif. Sementara itu, BERT merupakan model Transformer yang saat ini banyak digunakan pada berbagai tugas NLP.
 
 ## Dataset
 
@@ -87,7 +87,19 @@ Evaluasi model dilakukan menggunakan beberapa metrik:
 
 ## Hasil
 
-Hasil penelitian menunjukkan bahwa model berbasis Transformer (IndoBERT) mampu memberikan performa yang lebih baik dibandingkan metode shallow learning pada tugas klasifikasi clickbait bahasa Indonesia.
+Hasil penelitian menunjukkan bahwa model berbasis Transformer secara konsisten mengungguli metode shallow learning pada tugas klasifikasi clickbait bahasa Indonesia:
+
+| Model | Accuracy | F1-Score |
+|---|---|---|
+| IndoBERT-p1 (best single model) | 95.39% | 94.88% |
+| Weighted Ensemble (IndoBERT-p1 + p2 + XLM-RoBERTa) | 92.47% | - |
+| Naive Bayes / SVM (TF-IDF) | lebih rendah dari model Transformer | - |
+
+IndoBERT-p1 menjadi model dengan performa terbaik secara individual, mengungguli baseline shallow learning maupun kombinasi ensemble.
+
+## Status Publikasi
+
+Penelitian ini telah diterima (accepted) di **JOISER** dengan Letter of Acceptance (LOA), dan saat ini berada pada tahap copy editing menuju publikasi.
 
 ## Cara Menjalankan
 
